@@ -1,17 +1,23 @@
 import { useEffect } from "react";
 
+import { useMultistepForm } from "../hooks/useMultistepForm";
+
+import { useSelector } from "react-redux";
+
 import RegistracionForm from "../components/form";
 import { Modal } from "../components/modal"
-
-import { useMultistepForm } from "../hooks/useMultistepForm";
+import PersonNavigate from "../components/person";
 
 import Splash from "../pages/Splash";
 
 const Navigation = ({ open, handleClose }) => {
-    const { steps, currentStepIndex, step, isFirstStep, isLastStep, back, next } =
+    const booleanValue = useSelector((state) => state.boolean);
+
+    const { currentStepIndex, step, back, next } =
         useMultistepForm([
             <Splash />,
             <RegistracionForm />,
+            <PersonNavigate/>
         ]);
 
     useEffect(() => {
@@ -28,6 +34,14 @@ const Navigation = ({ open, handleClose }) => {
             clearTimeout(intervalId);
         };
     }, []);
+
+    useEffect(() => {
+        if(booleanValue) {
+            return next()
+        } else {
+            return back()
+        }
+    }, [booleanValue]);
 
     return (
         <Modal open={open} handleClose={handleClose} currentStepIndex={currentStepIndex}>

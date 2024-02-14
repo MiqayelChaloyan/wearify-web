@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 import initialDataReducer from './features/initialDataSlice';
+import booleanSlice from './features/booleanSlice';
 
 const store = configureStore({
   reducer: {
-    initialData: initialDataReducer,
+    state: initialDataReducer,
+    boolean: booleanSlice,
   },
 });
 

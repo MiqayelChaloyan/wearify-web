@@ -34,30 +34,45 @@
   border: 1px solid #EDEDED;
 }
 
-.button-back-size {
+/* .button-back-size {
   width: 160px;
   height: 63px;
-  font-size: 17px;
+  font-size: 18.91px;
+  line-height: 22.56px;
+  font-weight: 500;
   background-color: #F6F6F6;
   border-radius: 60px;
   cursor: pointer;
   color: #2ECDCD;
-  border: 1px solid #F6F6F6;
+  border: 1px solid white;
+}
+
+.button-back-profile {
+  width: 52px;
+  height: 50px;
+  font-size: 18.91px;
+  line-height: 22.56px;
+  font-weight: 500;
+  background-color: #858699;
+  border-radius: 60px;
+  cursor: pointer;
+  color: white;
+  border: 1px solid white;
 }
 
 .button-next-size {
   border: none;
   cursor: pointer;
   background: transparent;
-}
+} */
 
-.buttons-group-size {
+/* .buttons-group-size {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
-}
+} */
 
 .button-next {
   width: 160px;
@@ -102,8 +117,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 
-@media screen and (max-device-width: 1200px) {
-}
+@media screen and (max-device-width: 1200px) {}
 
 @media screen and (max-width: 991px) {}
 

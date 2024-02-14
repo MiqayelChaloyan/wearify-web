@@ -1,0 +1,59 @@
+.button-back-person {
+    width: 160px;
+    height: 63px;
+    font-size: 18.91px;
+    line-height: 22.56px;
+    font-weight: 500;
+    background-color: #F6F6F6;
+    border-radius: 60px;
+    cursor: pointer;
+    color: #2ECDCD;
+    border: 1px solid white;
+}
+
+.button-profile {
+    width: 52px;
+    height: 50px;
+    font-size: 18.91px;
+    line-height: 22.56px;
+    font-weight: 500;
+    background-color: #858699;
+    border-radius: 60px;
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+}
+
+.button-next-person {
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+.buttons-group-person {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 20px;
+    margin-top: 42px;
+}
+
+.buttons-group-profile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 42px;
+}
+
+.profile-title {
+    line-height: 23.87px;
+    font-size: 27px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    width: 40%;
+    margin: 0 auto;
+}

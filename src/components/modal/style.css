@@ -4,7 +4,7 @@
     width: 478px;
     height: 734px;
     transform: translate3d(0%, 0, 0);
-    /* transition: all ease 2s; */
+    /* transition: all ease 0.1s; */
     border-radius: 59.44px;
     top: 90px;
 }
