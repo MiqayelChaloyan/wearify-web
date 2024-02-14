@@ -1,8 +1,13 @@
 import url from '../assets/images/logo.png';
+import group from '../assets/images/group.png';
+import puffer_jacket from '../assets/images/puffer_jacket.png';
+
 
 const href = 'https://www.figma.com/file/JxWXIaJj5iD0Fp1jeDtm0j/Untitled?type=design&node-id=2-447&mode=design&t=EOPoVbEiPSMy1vtO-0';
 
 export {
     href,
-    url
+    url,
+    group,
+    puffer_jacket
 }

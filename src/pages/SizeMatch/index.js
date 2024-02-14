@@ -1,20 +1,31 @@
-import { useSelector } from "react-redux";
-import { Button } from "../../ui/button";
+import Pie from "../../ui/pie";
 
+import { puffer_jacket } from "../../constants";
+
+import './style.css';
 
 const SizeMatch = () => {
-    const INITIAL_DATA = useSelector((state) => state.initialData);
-
-    const handleClose = () => {
-        console.log('->>>>>>>>', INITIAL_DATA);
-    }
-
     return (
         <div>
-            <p style={{ color: 'white', textAlign: 'center' }}>SizeMatch</p>
-            <div>
-                <Button onClick={handleClose} text='Back' style={{ border: 'none', background: 'none', cursor: 'pointer', color: 'white' }} fontSize='20px' />
-
+            <div className='image'>
+                <img src={puffer_jacket} alt='jacket' />
+            </div>
+            <div className='bottom-sheet'>
+                <p className='title-match'>Your best fit</p>
+                <div className='sheet-row-1'>
+                    <div className='pie'>
+                        <Pie percentage={85} colour='#2ECDCD' fill='#C2EAEA' size='s' />
+                    </div>
+                    <div className='text'>
+                        <p className='recommendation'>
+                            This recommendation is based on your body parameters
+                            and size that people like you bought, and whether they returned it.
+                        </p>
+                    </div>
+                </div>
+                <div className='sheet-row-2'>
+                    <Pie percentage={15} colour='#BBB0C3' fill='white' size='m' />
+                </div>
             </div>
         </div>
     )

@@ -1,77 +1,116 @@
 .current-step {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 45px;
-    padding-right: 45px;
-  }
-  
-  .step {
-    color: white;
-    font-size: 22.78px;
-    font-weight: 500;
-  }
-  
-  .buttons-group {
-    margin-top: 1rem;
-    display: flex;
-    gap: 1.5rem;
-    justify-content: center;
-    position: fixed;
-    bottom: 25px;
-    right: 0;
-    left: 0;
-  }
-  
-  .button-back {
-    width: 160px;
-    height: 63px;
-    font-size: 17px;
-    background-color: #414260;
-    border-radius: 60px;
-    cursor: pointer;
-    color: #2ECDCD;
-    border: 1px solid #EDEDED;
-  }
-  
-  .button-next {
-    width: 160px;
-    height: 63px;
-    font-size: 17px;
-    background-color: #2ECDCD;
-    border: none;
-    border-radius: 60px;
-    cursor: pointer;
-    color: white
-  }
-  
-  .privacy {
-    color: #9B9CA7;
-    text-decoration: underline;
-    font-size: 22.78px;
-    font-weight: 500;
-  }
-  
-  .line {
-    background-color: #2ECDCD;
-    width: 385px;
-    height: 4px;
-    margin: 0 auto;
-  }
-  
-  input[type="text"] {
-    border: 1px solid #EDEDED;
-  }
-  
-  input[type="text"]:focus {
-    border: 1px solid #EDEDED;
-    outline: none;
-  }
-  
-  input[type=number]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-  }
-  
-  *:focus {
-    outline: none;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.step {
+  color: white;
+  font-size: 22.78px;
+  font-weight: 500;
+}
+
+.buttons-group {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  position: fixed;
+  bottom: 25px;
+  right: 0;
+  left: 0;
+}
+
+.button-back {
+  width: 160px;
+  height: 63px;
+  font-size: 17px;
+  background-color: #414260;
+  border-radius: 60px;
+  cursor: pointer;
+  color: #2ECDCD;
+  border: 1px solid #EDEDED;
+}
+
+.button-back-size {
+  width: 160px;
+  height: 63px;
+  font-size: 17px;
+  background-color: #F6F6F6;
+  border-radius: 60px;
+  cursor: pointer;
+  color: #2ECDCD;
+  border: 1px solid #F6F6F6;
+}
+
+.button-next-size {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+.buttons-group-size {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.button-next {
+  width: 160px;
+  height: 63px;
+  font-size: 17px;
+  background-color: #2ECDCD;
+  border: none;
+  border-radius: 60px;
+  cursor: pointer;
+  color: white
+}
+
+.privacy {
+  color: #9B9CA7;
+  text-decoration: underline;
+  font-size: 22.78px;
+  font-weight: 500;
+}
+
+.line {
+  background-color: #2ECDCD;
+  width: 385px;
+  height: 4px;
+  margin: 0 auto;
+}
+
+input[type="text"] {
+  border: 1px solid #EDEDED;
+}
+
+input[type="text"]:focus {
+  border: 1px solid #EDEDED;
+  outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+
+@media screen and (max-device-width: 1200px) {
+}
+
+@media screen and (max-width: 991px) {}
+
+@media screen and (max-width: 767px) {
+    .container {
+        width: 380px;
+        margin: 0 auto;
+        padding: 10px;
+    }
+}

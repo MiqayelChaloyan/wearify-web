@@ -73,3 +73,17 @@
     font-size: 18.48px;
     color: white;
 }
+
+@media screen and (max-device-width: 1200px) {}
+
+@media screen and (max-width: 991px) {}
+
+@media screen and (max-width: 767px) {
+    .slider-range {
+        width: 340px;
+    }
+
+    .value:after {
+        margin-bottom: -10px;
+    }
+}

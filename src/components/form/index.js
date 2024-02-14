@@ -1,22 +1,31 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useMultistepForm } from "../../hooks/useMultistepForm";
-
-import { useDispatch, useSelector } from "react-redux";
-import { addData } from "../../store/features/initialDataSlice";
+import useTheme from "../../hooks/useTheme";
 
 import AgeEntry from "../../pages/AgeEntry";
 import FitPreference from "../../pages/FitPreference";
 import Measurements from "../../pages/Measurements";
 import SizeMatch from "../../pages/SizeMatch";
+import Profile from "../../pages/Profile";
 
-import { href } from "../../constants";
+import { group, href } from "../../constants";
 
 import './style.css';
 
+
+const INITIAL_DATA = {
+    feet: "",
+    inches: "",
+    weight: "",
+    selectedHeight: "cm",
+    selectedWeight: "kg",
+    age: "",
+    range: ""
+}
+
 const RegistracionForm = () => {
-    const INITIAL_DATA = useSelector((state) => state.initialData);
     const [data, setData] = useState(INITIAL_DATA);
-    const dispatch = useDispatch();
+    const { setTheme } = useTheme();
 
     const updateFields = (fields) => {
         setData(prev => {
@@ -29,16 +38,21 @@ const RegistracionForm = () => {
             <Measurements {...data} updateFields={updateFields} />,
             <AgeEntry {...data} updateFields={updateFields} />,
             <FitPreference {...data} updateFields={updateFields} />,
-            <SizeMatch />
+            <SizeMatch />,
+            <Profile />
         ]);
-
 
     const onSubmit = (e) => {
         e.preventDefault()
+        console.log(data)
         // if (!isLastStep) return next()
-        // if (currentStepIndex === 3) return dispatch(addData(data));
-            console.log(data, 'data============||||||');
     }
+
+    useEffect(() => {
+        if (currentStepIndex === 3) return setTheme('#EDEDED');
+        if (currentStepIndex > 3) return setTheme('#0C0D34');
+        if (currentStepIndex < 3) return setTheme('#0C0D34');
+    }, [currentStepIndex]);
 
     return (
         <div>
@@ -47,7 +61,7 @@ const RegistracionForm = () => {
                     <form onSubmit={onSubmit}>
                         <div className='current-step'>
                             <p className='step'>
-                                Step {currentStepIndex + 1} / {steps.length - 1}
+                                Step {currentStepIndex + 1} / {steps.length - 2}
                             </p>
                             <a href={href} target="_blank" rel="noreferrer" className='privacy'>
                                 Privacy
@@ -69,6 +83,16 @@ const RegistracionForm = () => {
                 ) :
                     (
                         <>
+                            {!isFirstStep && (
+                                <div className='buttons-group-size'>
+                                    <button type='button' onClick={back} className='button-back-size'>
+                                        {'<'} Back
+                                    </button>
+                                    <button onClick={next} type='submit' className='button-next-size'>
+                                        <img src={group} alt='button' />
+                                    </button>
+                                </div>
+                            )}
                             {step}
                         </>
                     )

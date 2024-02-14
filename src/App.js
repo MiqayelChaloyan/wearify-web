@@ -2,23 +2,29 @@ import { useState } from 'react';
 
 import Navigation from './navigaton';
 
+import { ThemeProvider } from './context';
+
 const App = () => {
+
+  const [id, setId] = useState(null);
 
   const [open, setOpen] = useState(false);
 
-  const handleSubmit = () => setOpen(true);
+  const handleSubmit = (id) => {
+    setOpen(true);
+    setId(id)
+  }
 
   const handleClose = () => setOpen(false);
 
-
   return (
-    <>
-      <button type="button" onClick={handleSubmit} className='button'>
+    <ThemeProvider>
+      <button type="button" onClick={() => handleSubmit(id)} className='button'>
         open modal
       </button>
 
-      <Navigation open={open} handleClose={handleClose}/>
-    </>
+      <Navigation open={open} handleClose={handleClose} />
+    </ThemeProvider>
   )
 };
 
