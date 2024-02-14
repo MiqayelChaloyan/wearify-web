@@ -1,0 +1,21 @@
+.modal{
+    position: fixed;
+    margin: auto;
+    width: 478px;
+    height: 734px;
+    transform: translate3d(0%, 0, 0);
+    background-color: #0C0D34;
+    transition: all ease 2s;
+    border-radius: 59.44px;
+    top: 90px;
+}
+
+.modal-content {
+    display: grid;
+}
+
+.modal-header {
+	border-bottom-color: #eeeeee;
+    margin-left: auto;
+    margin-right: 37px;
+}

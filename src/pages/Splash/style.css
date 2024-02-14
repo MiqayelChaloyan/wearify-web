@@ -1,0 +1,11 @@
+.container-splash {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60%;
+}
+
+.img {
+    width: 137px;
+    height: 137px;
+}
