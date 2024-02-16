@@ -1,8 +1,14 @@
+import { useSelector } from 'react-redux';
+
 import { Input } from '../../ui/input';
 
 import './style.css';
 
 const AgeEntry = ({ age, updateFields }) => {
+    const state = useSelector((state) => state.state);
+
+    const handleChange = (e) => updateFields({ age: e.target.value });
+
     return (
         <div className='container'>
             <p className='step-title'>
@@ -12,12 +18,12 @@ const AgeEntry = ({ age, updateFields }) => {
             <div>
                 <div className='age-row'>
                     <Input
-                        // required
-                        name='age'
-                        className='age'
-                        // errors={age.trim() === '' && error}
-                        type='number'
-                        onChange={e => updateFields({ age: e.target.value })}
+                        name="age"
+                        type="number"
+                        value={state.age ? state.age : age}
+                        onChange={handleChange}
+                        className='input-style-age'
+                        errors={{ message: 'Example error message' }}
                     />
                 </div>
                 <p className='instruction'>
@@ -30,10 +36,3 @@ const AgeEntry = ({ age, updateFields }) => {
 };
 
 export default AgeEntry;
-
-
-
-
-{/* {error && <p style={{ color: 'red', textAlign: 'center' }}>
-            Please enter an age between 12 and 99 years.
-</p>} */}

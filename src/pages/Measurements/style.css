@@ -1,5 +1,4 @@
-.height {
-    background: red;
+.input-style-height {
     width: 126px;
     height: 76px;
     border-radius: 60px;
@@ -44,19 +43,19 @@
 
 .height-row {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
 .text-decoration-1 {
-    background-color: #F5F5F5;
+    background-color: #2ECDCD;
     width: 351px;
     height: 3.45px;
     margin: 0 auto;
+    opacity: 0.2;
 }
 
-.weight {
-    background: red;
+.input-style-weight {
     width: 256px;
     height: 76px;
     border-radius: 60px;
@@ -71,6 +70,21 @@
 
 .weight-row {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+}
+
+.input-box {
+    position: relative;
+}
+
+.unit {
+    position: absolute;
+    display: block;
+    right: 16px;
+    top: 30px;
+    z-index: 9;
+    font-size: 20px;
+    color: white;
+    border-width: 500;
 }

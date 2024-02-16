@@ -12,6 +12,22 @@
   font-weight: 500;
 }
 
+/* PROGRESS BAR */
+.progressbar {
+  width: 385px;
+  height: 4px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+.progressbar div {
+  width: 33.3%;
+  height: 100%;
+  background-color: #2ECDCD;
+  transition: all .7s;
+}
+
 .buttons-group {
   margin-top: 1rem;
   display: flex;
@@ -34,46 +50,6 @@
   border: 1px solid #EDEDED;
 }
 
-/* .button-back-size {
-  width: 160px;
-  height: 63px;
-  font-size: 18.91px;
-  line-height: 22.56px;
-  font-weight: 500;
-  background-color: #F6F6F6;
-  border-radius: 60px;
-  cursor: pointer;
-  color: #2ECDCD;
-  border: 1px solid white;
-}
-
-.button-back-profile {
-  width: 52px;
-  height: 50px;
-  font-size: 18.91px;
-  line-height: 22.56px;
-  font-weight: 500;
-  background-color: #858699;
-  border-radius: 60px;
-  cursor: pointer;
-  color: white;
-  border: 1px solid white;
-}
-
-.button-next-size {
-  border: none;
-  cursor: pointer;
-  background: transparent;
-} */
-
-/* .buttons-group-size {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
-} */
-
 .button-next {
   width: 160px;
   height: 63px;
@@ -90,13 +66,6 @@
   text-decoration: underline;
   font-size: 22.78px;
   font-weight: 500;
-}
-
-.line {
-  background-color: #2ECDCD;
-  width: 385px;
-  height: 4px;
-  margin: 0 auto;
 }
 
 input[type="text"] {

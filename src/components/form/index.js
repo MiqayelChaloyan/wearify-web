@@ -46,14 +46,14 @@ const RegistracionForm = () => {
             <FitPreference {...data} updateFields={updateFields} />,
         ]);
 
-    useEffect(() => setTheme('#0C0D34'), [currentStepIndex]);
+    const width = currentStepIndex === 0 ? '33.3%' : currentStepIndex === 1 ? '66.6%' : '100%';
+
+    useEffect(() => setTheme('#0C0D34'), [currentStepIndex, setTheme]);
 
     const onSubmit = (e) => {
         e.preventDefault()
-        console.log(data)
-        // if (!isLastStep) return next()
-        dispatch(addData({...data}));
-    }
+        dispatch(addData({ ...data }));
+    };
 
     return (
         <div>
@@ -64,11 +64,13 @@ const RegistracionForm = () => {
                             <p className='step'>
                                 Step {currentStepIndex + 1} / {steps.length}
                             </p>
-                            <a href={href} target="_blank" rel="noreferrer" className='privacy'>
+                            <a href={href} target='_blank' rel='noreferrer' className='privacy'>
                                 Privacy
                             </a>
                         </div>
-                        <div className='line' />
+                        <div className='progressbar'>
+                            <div style={{ width }}></div>
+                        </div>
                         {step}
                         <div className='buttons-group'>
                             {!isFirstStep && (

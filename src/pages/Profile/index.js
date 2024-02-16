@@ -6,11 +6,11 @@ import './style.css';
 
 const Profile = () => {
     const state = useSelector((state) => state.state);
-    const { age, feat, inches, range, selectedHeight, selectedWeight, weight } = state;
+    const { age, inches, range, selectedHeight, selectedWeight, weight } = state;
 
     const handleScannCamera = () => {
-        console.log('scann');
-    }
+        console.log('scann', state);
+    };
 
     return (
         <div>

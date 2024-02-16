@@ -13,11 +13,11 @@
 }
 
 .text-decoration-3 {
-    background-color: #F5F5F5;
+    background-color: #2ECDCD;
     width: 351px;
     height: 3.45px;
     margin: 0 auto;
-    margin-bottom: 50px;
+    opacity: 0.2;
 }
 
 .age-row {
@@ -27,8 +27,7 @@
     margin-bottom: 40px;
 }
 
-.age {
-    background: red;
+.input-style-age {
     width: 256px;
     height: 76px;
     border-radius: 60px;

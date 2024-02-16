@@ -13,10 +13,11 @@
 }
 
 .text-decoration-3 {
-    background-color: #F5F5F5;
+    background-color: #2ECDCD;
     width: 351px;
     height: 3.45px;
     margin: 0 auto;
+    opacity: 0.2;
     margin-bottom: 32px;
 }
 
