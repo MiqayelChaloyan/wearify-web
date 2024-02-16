@@ -12,7 +12,7 @@
     font-size: 18.48px;
     margin-bottom: 55px;
     color: white;
-    width: 112px;
+    width: 120px;
     height: 40px;
     background-color: #2ECDCD;
     text-align: center;
@@ -33,7 +33,7 @@
     border: 13px solid transparent;
     border-top-color: #2ECDCD;
     border-bottom: 0;
-    margin-left: -13px;
+    margin-left: -12px;
     margin-bottom: -13px;
 }
 
@@ -43,35 +43,51 @@
     appearance: none;
     height: 5.78px;
     border-radius: 5px;
-    background: #ecf0f1;
+    background-color: #9B9CA7;
     outline: none;
     margin-bottom: 20px;
+    z-index: 10;
 }
 
 .slider-range::-webkit-slider-thumb {
     appearance: none;
-    width: 38px;
-    height: 38px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     background-color: #2ECDCD;
     cursor: pointer;
     border-radius: 50%;
     top: 0;
     left: 0;
-    border: 5px solid #0C0D34;
-    box-shadow: 0 0 1px 3px #2ECDCD;
+    border: 4px solid #0C0D34;
+    box-shadow: 0 0 0.5px 3px #4b9696;
 }
 
 .size {
     display: flex;
     justify-content: space-between;
-    width: 390.43px;
+    width: 360px;
 }
 
 .size-text {
     font-weight: 500;
     font-size: 18.48px;
     color: white;
+}
+
+.lines {
+    display: flex;
+    justify-content: space-between;
+    width: 340px;
+    position: relative;
+    bottom: 14px;
+}
+
+.line {
+    background-color: #9B9CA7;
+    width: 5.78px;
+    height: 19.64px;
+    border-radius: 23px;
 }
 
 @media screen and (max-device-width: 1200px) {}

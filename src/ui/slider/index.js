@@ -37,10 +37,19 @@ const SliderRange = ({ range, onChange }) => {
                 type='range'
                 min='0'
                 max='96'
-                step='12'
+                step='16'
                 value={sliderValue}
                 onChange={handleSliderChange}
             />
+            <div className='lines'>
+                <div className='line'></div>
+                <div className='line'></div>
+                <div className='line'></div>
+                <div className='line'></div>
+                <div className='line'></div>
+                <div className='line'></div>
+                <div className='line'></div>
+            </div>
             <div className='size'>
                 <p className='size-text'>Tighter</p>
                 <p className='size-text'>Looser</p>
