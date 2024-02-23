@@ -1,16 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit';
+import formInitialValues from '../../components/form/formInitialValues'
 
 const initialDataSlice = createSlice({
   name: 'initialData',
-  initialState: {
-    feet: '',
-    inches: '',
-    weight: '',
-    selectedHeight: 'cm',
-    selectedWeight: 'kg',
-    age: '',
-    range: '',
-  },
+  initialState: { formInitialValues },
   reducers: {
     addData: (state, action) => {
       return { ...state, ...action.payload };

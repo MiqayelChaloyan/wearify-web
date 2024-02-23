@@ -1,23 +1,6 @@
-.step-title {
-    font-size: 28px;
-    font-weight: 500;
-    color: #FFFFFF;
-    line-height: 33.41px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
 .container {
     width: 410px;
     margin: 0 auto;
-}
-
-.text-decoration-3 {
-    background-color: #2ECDCD;
-    width: 351px;
-    height: 3.45px;
-    margin: 0 auto;
-    opacity: 0.2;
 }
 
 .age-row {

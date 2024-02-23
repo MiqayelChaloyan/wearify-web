@@ -1,0 +1,10 @@
+.form-input {
+    display: grid;
+    place-items: center;
+    gap: 15px;
+}
+
+.error-field {
+    color: red;
+    font-size: 12px;
+}

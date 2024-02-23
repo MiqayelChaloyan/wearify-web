@@ -1,4 +1,4 @@
-.input-style-height {
+.form-input-height {
     width: 126px;
     height: 76px;
     border-radius: 60px;
@@ -10,6 +10,46 @@
     color: #FFFFFF;
     text-align: center;
 }
+
+.title-row {
+    line-height: 23.87px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.height-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-input-weight {
+    width: 256px;
+    height: 76px;
+    border-radius: 60px;
+    background-color: #414260;
+    border: 1px solid #EDEDED;
+    font-size: 24px;
+    letter-spacing: 1.5px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .step-title {
     font-size: 28px;
@@ -33,27 +73,17 @@
     text-align: center;
 }
 
-.title {
-    line-height: 23.87px;
-    font-size: 20px;
-    font-weight: 700;
-    color: #FFFFFF;
-    text-transform: uppercase;
-}
 
-.height-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
+
+/* 
 .text-decoration-1 {
     background-color: #2ECDCD;
     width: 351px;
     height: 3.45px;
     margin: 0 auto;
     opacity: 0.2;
-}
+} */
 
 .input-style-weight {
     width: 256px;

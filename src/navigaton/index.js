@@ -4,7 +4,7 @@ import { useMultistepForm } from "../hooks/useMultistepForm";
 
 import { useSelector } from "react-redux";
 
-import RegistracionForm from "../components/form";
+import SteppedModal from "../components/form";
 import { Modal } from "../components/modal"
 import PersonNavigate from "../components/person";
 
@@ -16,7 +16,7 @@ const Navigation = ({ open, handleClose }) => {
     const { currentStepIndex, step, back, next } =
         useMultistepForm([
             <Splash />,
-            <RegistracionForm />,
+            <SteppedModal />,
             <PersonNavigate/>
         ]);
 

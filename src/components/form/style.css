@@ -29,7 +29,7 @@
   border-radius: 40px;
 }
 
-.buttons-group {
+.buttons {
   margin-top: 1rem;
   display: flex;
   gap: 1.5rem;
@@ -97,4 +97,32 @@ input[type=number]::-webkit-inner-spin-button {
         margin: 0 auto;
         padding: 10px;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.title {
+  font-size: 28px;
+  font-weight: 500;
+  color: #FFFFFF;
+  line-height: 33.41px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.line {
+  background-color: #2ECDCD;
+  width: 351px;
+  height: 3.45px;
+  margin: 0 auto;
+  opacity: 0.2;
 }
