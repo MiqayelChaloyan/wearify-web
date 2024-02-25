@@ -1,165 +1,7 @@
-.right {
-    background-color: #ffffff2e;
-    backdrop-filter: blur(23px);
-    position: absolute;
-    top: 0;
-    width: 158px;
-    height: 734px;
-    right: 0;
-    border-radius: 59.44px;
-}
-
-.height-person {
-    width: 103.93px;
-    background-color: #2ECDCD;
-    height: 56px;
-    border-radius: 6.44px;
-}
-
-.weight-person {
-    width: 103.93px;
-    background-color: #2ECDCD;
-    height: 56px;
-    border-radius: 6.44px;
-}
-
-.age-person {
-    width: 103.93px;
-    background-color: #2ECDCD;
-    height: 56px;
-    border-radius: 6.44px;
-}
-
-.feet-person {
-    width: 103.93px;
-    background-color: #2ECDCD;
-    height: 56px;
-    border-radius: 6.44px;
-}
-
-.gender-person {
-    width: 103.93px;
-    background-color: #858699;
-    height: 56px;
-    border-radius: 6.44px;
-    border: 1px solid white
-}
-
-.sizes {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    margin-bottom: 67px;
-    margin-top: 72px;
-}
-
-.title-sizes {
-    text-align: center;
-    font-weight: 700;
-    font-size: 18.48px;
-    line-height: 22.06px;
-    color: white;
-}
-
-.average {
-    height: 613px;
-    width: 378px;
-}
-
-.camera-button {
-    position: absolute;
-    bottom: 40px;
-    left: 40px;
-}
-
-.edit-button {
-    position: absolute;
-    bottom: 174px;
-    left: 40px;
-}
-
-.button-scann {
-    border: 1px solid #2ECDCD;
-    background-color: #1D6D80;
-    border-radius: 50px;
-    cursor: pointer;
-    width: 61px;
-    height: 61px;
-}
-
-.camera {
-    width: 37.54px;
-    height: 42.23px;
-}
-
-.scann {
-    font-weight: 500;
-    border-radius: 50px;
-    font-size: 17px;
-    margin-bottom: 13px;
-    color: white;
-    width: 85.05px;
-    height: 15px;
-    background-color: #2ECDCD;
-    text-align: center;
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.scann:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 30%;
-    width: 0;
-    height: 0;
-    border: 10px solid transparent;
-    border-top-color: #2ECDCD;
-    border-bottom: 0;
-    margin-left: -13px;
-    margin-bottom: -10px;
-}
-
-.background-image {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.person-size-text {
-    color: #F5F5F5;
-    font-size: 18.48px;
-    line-height: 16px;
-    font-weight: 700;
-    text-align: center;
-}
-
-.edit-button-text {
-    color: #F5F5F5;
-    font-size: 18.48px;
-    line-height: 16px;
-    font-weight: 700;
-    text-align: center;
-}
-
-.form-input {
-    margin-left: 10px;
-}
-
-.form-input-height {
-    width: 118px;
-    height: 76px;
-    border-radius: 60px;
-    background-color: #414260;
-    border: 1px solid #EDEDED;
-    font-size: 24px;
-    letter-spacing: 1.5px;
-    line-height: 24px;
-    color: #FFFFFF;
-    text-align: center;
+.left {
+    padding: 25px;
+    width: 412px;
+    margin: 65px auto;
 }
 
 .title-row {
@@ -177,6 +19,19 @@
     height: 100px;
 }
 
+.form-input-height {
+    width: 118px;
+    height: 76px;
+    border-radius: 60px;
+    background-color: #414260;
+    border: 1px solid #EDEDED;
+    font-size: 24px;
+    letter-spacing: 1.5px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
 .row-2 {
     display: flex;
     justify-content: flex-start;
@@ -187,14 +42,10 @@
     margin-bottom: 105px;
 }
 
-.left {
-    padding: 25px;
-    width: 412px;
-    margin: 65px auto;
-}
-
-.right-input {
-    margin-left: 10px;
+.buttons-edit-form {
+    display: grid;
+    margin: 0 auto;
+    width: 305px;
 }
 
 .button-edit {
@@ -220,8 +71,18 @@
     border: 1px solid #EDEDED;
 }
 
-.buttons-edit-form {
-    display: grid;
-    margin: 0 auto;
-    width: 305px;
+.right {
+    background-color: #ffffff2e;
+    backdrop-filter: blur(23px);
+    position: absolute;
+    top: 0;
+    width: 158px;
+    height: 734px;
+    right: 0;
+    border-radius: 59.44px;
+}
+
+.input-box-edit {
+    margin-left: 10px;
+    position: relative;
 }

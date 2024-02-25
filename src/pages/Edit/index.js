@@ -69,8 +69,8 @@ const Edit = () => {
                                         <span className='unit'>ft</span>
                                     </div>
                                     {
-                                        !isCentimeterBool &&
-                                        <div className='input-box'>
+                                        !isCentimeter &&
+                                        <div className='input-box-edit'>
                                             <InputField
                                                 name={formField.inches.name}
                                                 className='form-input-height'

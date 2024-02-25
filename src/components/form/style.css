@@ -90,25 +90,6 @@
   color: white
 }
 
-/* 
-input[type="text"] {
-  border: 1px solid #EDEDED;
-}
-
-input[type="text"]:focus {
-  border: 1px solid #EDEDED;
-  outline: none;
-} */
-
-/* input[type=number]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-} */
-
-/* *:focus {
-  outline: none;
-} */
-
-
 @media screen and (max-device-width: 1200px) {}
 
 @media screen and (max-width: 991px) {}

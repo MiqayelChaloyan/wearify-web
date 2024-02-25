@@ -1,5 +1,7 @@
+import React from 'react';
 
 import { useSelector } from 'react-redux';
+
 import { average, camera } from '../../constants';
 
 import './style.css';
@@ -16,19 +18,14 @@ const Profile = ({ _handleNext, setStep, step }) => {
         weight
     } = state;
 
-    const handleScannCamera = () => {
-        // console.log('scann', step, setStep);
-        // _handleNext(setStep(step + 2))
-        setStep(step + 2)
-
-    };
+    const handleOpenQR = () => setStep(step + 2);
 
     return (
         <div>
             <div>
                 <div className='camera-button'>
                     <span className='scann'>Scann now</span>
-                    <button className='button-scann' onClick={handleScannCamera}>
+                    <button className='button-scann' onClick={handleOpenQR}>
                         <img src={camera} alt='camera' className='camera' />
                     </button>
                 </div>
@@ -71,4 +68,4 @@ const Profile = ({ _handleNext, setStep, step }) => {
     )
 };
 
-export default Profile;
+export default React.memo(Profile);

@@ -1,6 +1,7 @@
-import { useState } from "react";
-import InputField from "../../ui/input";
-import ToggleSwitch from "../../ui/toggleSwitch";
+import { useState } from 'react';
+
+import InputField from '../../ui/input';
+import ToggleSwitch from '../../ui/toggleSwitch';
 
 import './style.css';
 
@@ -14,6 +15,7 @@ const StepOne = (props) => {
             isKilogram
         }
     } = props;
+
     const [isCentimeterBool, setIsCentimeterBool] = useState(true);
     const [isKilogramBool, setIsKilogramBool] = useState(true);
 

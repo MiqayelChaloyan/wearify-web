@@ -1,24 +1,6 @@
-.step-title {
-    font-size: 28px;
-    font-weight: 500;
-    color: #FFFFFF;
-    line-height: 33.41px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
 .container-step-three {
     width: 385px;
-    margin: 20px auto !important;
-}
-
-.text-decoration-3 {
-    background-color: #2ECDCD;
-    width: 351px;
-    height: 3.45px;
-    margin: 0 auto;
-    opacity: 0.2;
-    margin-bottom: 32px;
+    margin: 20px auto;
 }
 
 .text-three {

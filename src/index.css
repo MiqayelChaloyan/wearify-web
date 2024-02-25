@@ -10,3 +10,21 @@ body {
 code {
   font-family: 'SF Pro Display', sans-serif;
 }
+
+
+input[type="text"] {
+  border: 1px solid #EDEDED;
+}
+
+input[type="text"]:focus {
+  border: 1px solid #EDEDED;
+  outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+*:focus {
+  outline: none;
+}

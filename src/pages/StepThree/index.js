@@ -1,22 +1,16 @@
+import React from "react";
+
 import SliderRange from "../../ui/slider";
 
 import './style.css'
 
-const StepThree = (props) => {
-    const {
-        formField: {
-            range,
-        }
-    } = props;
+const StepThree = ({ formField: { range } }) => (
+    <div className='container-step-three'>
+        <p className='text-three' >
+            I want this item to fit ...
+        </p>
+        <SliderRange name={range.name} />
+    </div>
+);
 
-    return (
-        <div className='container-step-three'>
-            <p className='text-three' >
-                I want this item to fit ...
-            </p>
-            <SliderRange name={range.name} />
-        </div>
-    );
-};
-
-export default StepThree;
+export default React.memo(StepThree);
