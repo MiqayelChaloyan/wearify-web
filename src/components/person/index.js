@@ -66,7 +66,7 @@ const PersonNavigate = () => {
                 activeStep === 0 || activeStep === 3 ? (
                     <div className='buttons-group-person'>
                         <button type='button' onClick={activeStep === 0 ? () => dispatch(setFalse()) : _handleBack} className='button-back-person'>
-                            {'< Back'}
+                            {'く Back'}
                         </button>
                         <button onClick={_handleNext} type='submit' className={activeStep === 0 ? 'button-next-person' : 'button-info'}>
                             {activeStep === 0 ? <img src={group} alt='button' /> : <p className='button-info-text'>i</p>}
@@ -75,7 +75,7 @@ const PersonNavigate = () => {
                 ) : (
                     <div className='buttons-group-profile'>
                         <button type='button' onClick={_handleBack} className='button-profile'>
-                            {'<'}
+                            {'く'}
                         </button>
                         <h1 className='profile-title'>{steps[activeStep]}</h1>
                     </div>

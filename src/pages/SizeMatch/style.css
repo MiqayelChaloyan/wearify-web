@@ -61,12 +61,21 @@
 
 @media screen and (max-width: 991px) {}
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 412px) {
     .bottom-sheet {
-        width: 410px;
+        width: 100%;
     }
 
     .text {
         width: 194px;
     }
+
+    .clothes {
+        margin: 0 auto;
+        width: 65%;
+    }
+    
+    .bottom-sheet {
+        height: 348px;
+    }    
 }

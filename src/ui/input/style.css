@@ -8,3 +8,9 @@
     color: #D96A6A;
     font-size: 14px;
 }
+
+@media screen and (max-width: 412px) {
+    .error-field {
+        font-size: 12px;
+    }
+}

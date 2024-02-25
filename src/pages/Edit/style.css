@@ -86,3 +86,35 @@
     margin-left: 10px;
     position: relative;
 }
+
+@media screen and (max-width: 412px) {
+
+    .button-edit {
+        width: 160px;
+        height: 60px;
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+    
+    .button-clear {
+        width: 160px;
+        height: 60px;
+        font-size: 17px;
+    }
+
+    .buttons-edit-form {
+        width: 337px;
+    }
+    
+    .row-2 {
+        margin-bottom: 0;
+    }
+
+    .form-input-height {
+        width: 86px;
+        height: 60px;
+        font-size: 22px;
+        letter-spacing: 0.5px;
+    }
+    
+}

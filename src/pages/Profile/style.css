@@ -144,3 +144,43 @@
     font-weight: 700;
     text-align: center;
 }
+
+
+@media screen and (max-width: 412px) {
+    .right {
+        height: 100%;
+    }
+
+    .sizes {
+        margin-top: 10px;
+    }
+
+    .weight-person, .height-person, .age-person, .gender-person, .feet-person {
+        width: 90px;
+        height: 40px;
+        border-radius: 6.44px;
+    }
+
+    .person-size-text {
+        font-size: 11px;
+        line-height: 9px;
+        font-weight: 500;
+        padding: 5px;
+    }
+
+    .title-sizes {
+        font-size: 18px;
+    }
+
+    .average {
+        height: 100%;
+        width: 100%;
+    }
+
+    .profile-title {
+        line-height: 0;
+        font-size: 20px;
+        width: 50%;
+        margin: 0 auto;
+    }
+}

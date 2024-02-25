@@ -35,7 +35,7 @@
 }
 
 input:checked+.slider {
-    background-color:  #2ECDCD;
+    background-color: #2ECDCD;
 }
 
 input:focus+.slider {
@@ -70,4 +70,12 @@ input:checked+.slider:before {
     font-weight: 400;
     padding-left: 7px;
     padding-right: 7px;
+}
+
+
+
+@media screen and (max-width: 412px) {
+    .toggle-switch {
+        padding: 0;
+    }
 }
