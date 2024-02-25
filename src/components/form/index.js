@@ -1,10 +1,13 @@
-import { setTrue } from "../../store/features/booleanSlice";
+import React, { useEffect, useState } from 'react';
+
+import { Formik, Form } from 'formik';
+
 import { useDispatch } from "react-redux";
+import { setTrue } from "../../store/features/booleanSlice";
+import { addData } from "../../store/features/initialDataSlice";
+
 import useTheme from "../../hooks/useTheme";
 
-import { addData } from "../../store/features/initialDataSlice";
-import React, { useEffect, useState } from 'react';
-import { Formik, Form } from 'formik';
 import validationSchema from "./validationSchema";
 import checkoutFormModel from "./checkoutFormModel";
 import formInitialValues from "./formInitialValues";
@@ -12,21 +15,23 @@ import formInitialValues from "./formInitialValues";
 import StepOne from "../../pages/StepOne";
 import StepTwo from "../../pages/StepTwo";
 import StepThree from '../../pages/StepThree';
+
 import { href } from "../../constants";
 
 import './style.css';
 
+const steps = ['Your Measurements', 'What’s your age?', 'Fit preference'];
+
 const SteppedModal = () => {
-    const steps = ['Your Measurements', 'What’s your age?', 'Fit preference'];
     const [activeStep, setActiveStep] = useState(0);
     const currentValidationSchema = validationSchema[activeStep];
     const { formId, formField } = checkoutFormModel;
-    const dispatch = useDispatch();
     const { setTheme } = useTheme();
+    const dispatch = useDispatch();
 
     const _sleep = (ms) => {
         return new Promise(resolve => setTimeout(resolve, ms));
-    }
+    };
 
     const _renderStepContent = (step) => {
         switch (step) {
@@ -37,7 +42,7 @@ const SteppedModal = () => {
             default:
                 return <StepThree formField={formField} />;
         }
-    }
+    };
 
     const _submitForm = async (values, actions) => {
         await _sleep(1000);
@@ -45,7 +50,7 @@ const SteppedModal = () => {
         actions.setSubmitting(false);
         dispatch(setTrue())
         dispatch(addData({ ...values }))
-    }
+    };
 
     const _handleSubmit = (values, actions) => {
         if (activeStep === steps.length - 1) {
@@ -55,12 +60,12 @@ const SteppedModal = () => {
             actions.setTouched({});
             actions.setSubmitting(false);
         }
-    }
+    };
 
     const _handleBack = (e) => {
         e.preventDefault();
         setActiveStep(activeStep - 1);
-    }
+    };
 
     const width = activeStep === 0 ? '33.3%' : activeStep === 1 ? '66.6%' : '100%';
 
@@ -75,7 +80,7 @@ const SteppedModal = () => {
             {({ isSubmitting }) => (
                 <Form id={formId}>
                     <div className='current-step'>
-                        <p className='step'>
+                        <p className='active-step'>
                             Step {activeStep + 1} / {steps.length}
                         </p>
                         <a href={href} target='_blank' rel='noreferrer' className='privacy'>
@@ -102,7 +107,7 @@ const SteppedModal = () => {
                                 color='primary'
                                 className='button-next'
                             >
-                                {activeStep === steps.length - 1 ? 'Submit' : 'Next'}
+                                {activeStep === steps.length - 1 ? 'Send' : 'Next'}
                             </button>
                         </div>
                     </div>

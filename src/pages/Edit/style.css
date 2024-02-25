@@ -144,3 +144,84 @@
     font-weight: 700;
     text-align: center;
 }
+
+.form-input {
+    margin-left: 10px;
+}
+
+.form-input-height {
+    width: 118px;
+    height: 76px;
+    border-radius: 60px;
+    background-color: #414260;
+    border: 1px solid #EDEDED;
+    font-size: 24px;
+    letter-spacing: 1.5px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.title-row {
+    line-height: 23.87px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.row-1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100px;
+}
+
+.row-2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100px;
+    margin: 0 auto;
+    width: 305px;
+    margin-bottom: 105px;
+}
+
+.left {
+    padding: 25px;
+    width: 412px;
+    margin: 65px auto;
+}
+
+.right-input {
+    margin-left: 10px;
+}
+
+.button-edit {
+    width: 160px;
+    height: 63px;
+    font-size: 17px;
+    background-color: #2ECDCD;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.button-clear {
+    width: 160px;
+    height: 63px;
+    font-size: 17px;
+    background-color: #414260;
+    border-radius: 60px;
+    cursor: pointer;
+    color: #2ECDCD;
+    border: 1px solid #EDEDED;
+}
+
+.buttons-edit-form {
+    display: grid;
+    margin: 0 auto;
+    width: 305px;
+}

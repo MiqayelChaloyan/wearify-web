@@ -1,5 +1,5 @@
 .form-input-height {
-    width: 126px;
+    width: 118px;
     height: 76px;
     border-radius: 60px;
     background-color: #414260;
@@ -19,14 +19,15 @@
     text-transform: uppercase;
 }
 
-.height-row {
+.row {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    height: 100px;
 }
 
 .form-input-weight {
-    width: 256px;
+    width: 247px;
     height: 76px;
     border-radius: 60px;
     background-color: #414260;
@@ -60,8 +61,8 @@
     text-transform: uppercase;
 }
 
-.container {
-    width: 410px;
+.container-step-one {
+    width: 385px;
     margin: 0 auto;
 }
 
@@ -71,6 +72,8 @@
     color: #FFFFFF;
     line-height: 23.87px;
     text-align: center;
+    width: 366px;
+    margin: 14px auto;
 }
 
 
@@ -96,12 +99,6 @@
     line-height: 24px;
     color: #FFFFFF;
     text-align: center;
-}
-
-.weight-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .input-box {

@@ -7,9 +7,9 @@
     text-transform: uppercase;
 }
 
-.container {
-    width: 410px;
-    margin: 0 auto;
+.container-step-three {
+    width: 385px;
+    margin: 20px auto !important;
 }
 
 .text-decoration-3 {
@@ -21,7 +21,7 @@
     margin-bottom: 32px;
 }
 
-.text {
+.text-three {
     font-size: 20px;
     font-weight: 500;
     color: #FFFFFF;

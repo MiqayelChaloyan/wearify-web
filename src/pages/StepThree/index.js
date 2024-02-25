@@ -10,11 +10,11 @@ const StepThree = (props) => {
     } = props;
 
     return (
-        <div className='container'>
-            <p className='text' >
+        <div className='container-step-three'>
+            <p className='text-three' >
                 I want this item to fit ...
             </p>
-            <SliderRange name={range} />
+            <SliderRange name={range.name} />
         </div>
     );
 };

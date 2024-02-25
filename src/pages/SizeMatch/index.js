@@ -24,7 +24,7 @@ const SizeMatch = () => {
                     </div>
                 </div>
                 <div className='sheet-row-2'>
-                    <Pie percentage={15} colour='#BBB0C3' fill='white' size='m' />
+                    <Pie percentage={15} colour='#D0AEF2' fill='#EBE1F4' size='m' />
                 </div>
             </div>
         </div>

@@ -10,8 +10,7 @@ const StepTwo = (props) => {
     } = props;
 
     return (
-        <div className='container'>
-            <div>
+        <div className='container-step-two'>
                 <div className='age-row'>
                     <InputField name={age.name} className='input-style-age'/>
                 </div>
@@ -19,7 +18,6 @@ const StepTwo = (props) => {
                     We ask for this detail as age has an impact on how your weight
                     is disrupted, and ultimately helps us recommend the right size.
                 </p>
-            </div>
         </div>
     );
 };

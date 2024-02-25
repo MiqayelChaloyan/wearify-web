@@ -19,5 +19,5 @@ export default {
     [isCentimeter.name]: true,
     [isKilogram.name]: true,
     [age.name]: '',
-    [range.name]: '',
+    [range.name]: 'AVERAGE',
 };

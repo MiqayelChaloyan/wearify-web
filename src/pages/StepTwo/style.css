@@ -1,13 +1,14 @@
-.container {
-    width: 410px;
-    margin: 0 auto;
+.container-step-two {
+    width: 385px;
+    margin: 50px auto;
 }
 
 .age-row {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 65px !important;
+    height: 100px;
 }
 
 .input-style-age {
@@ -29,4 +30,6 @@
     color: #FFFFFF;
     line-height: 23.87px;
     text-align: center;
+    width: 335px;
+    margin: 0 auto;
 }

@@ -4,21 +4,39 @@ import { average, camera } from '../../constants';
 
 import './style.css';
 
-const Profile = () => {
+const Profile = ({ _handleNext, setStep, step }) => {
     const state = useSelector((state) => state.state);
-    const { age, inches, range, selectedHeight, selectedWeight, weight } = state;
+    const {
+        feet,
+        age,
+        inches,
+        range,
+        isCentimeter,
+        isKilogram,
+        weight
+    } = state;
 
     const handleScannCamera = () => {
-        console.log('scann', state);
+        // console.log('scann', step, setStep);
+        // _handleNext(setStep(step + 2))
+        setStep(step + 2)
+
     };
 
     return (
         <div>
-            <div className='camera-button'>
-                <span className='scann'>Scann now</span>
-                <button className='button-scann' onClick={handleScannCamera}>
-                    <img src={camera} alt='camera' className='camera' />
-                </button>
+            <div>
+                <div className='camera-button'>
+                    <span className='scann'>Scann now</span>
+                    <button className='button-scann' onClick={handleScannCamera}>
+                        <img src={camera} alt='camera' className='camera' />
+                    </button>
+                </div>
+                <div className='edit-button'>
+                    <button className='button-scann' onClick={_handleNext}>
+                        <span className='edit-button-text'>Edit</span>
+                    </button>
+                </div>
             </div>
             <div className='background-image'>
                 <img src={average} alt='average' className='average' />
@@ -27,11 +45,11 @@ const Profile = () => {
                 <div className='sizes'>
                     <p className='title-sizes'>Height</p>
                     <div className='height-person'>
-                        <p className='person-size-text'>{inches} {selectedHeight}</p>
+                        <p className='person-size-text'>{feet || inches} {isCentimeter ? 'cm' : 'in'}</p>
                     </div>
                     <p className='title-sizes'>Weight</p>
                     <div className='weight-person'>
-                        <p className='person-size-text'>{weight} {selectedWeight}</p>
+                        <p className='person-size-text'>{weight} {isKilogram ? 'kg' : 'ibs'}</p>
                     </div>
                 </div>
                 <div className='sizes'>

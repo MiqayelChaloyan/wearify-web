@@ -17,7 +17,8 @@ const {
 export default [
   Yup.object().shape({
     [feet.name]: Yup.string().required(`${feet.requiredErrorMsg}`),
-    [inches.name]: Yup.string().required(`${inches.requiredErrorMsg}`),
+    // [inches.name]: Yup.string().required(`${inches.requiredErrorMsg}`),
+    [inches.name]: Yup.string(),
     [weight.name]: Yup.string().required(`${weight.requiredErrorMsg}`),
     [isCentimeter.name]: Yup.bool(),
     [isKilogram.name]: Yup.bool(),

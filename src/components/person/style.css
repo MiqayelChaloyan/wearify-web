@@ -1,6 +1,15 @@
+.buttons-group-person {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 20px;
+    margin-top: 42px;
+}
+
 .button-back-person {
-    width: 160px;
-    height: 63px;
+    width: 123px;
+    height: 50px;
     font-size: 18.91px;
     line-height: 22.56px;
     font-weight: 500;
@@ -9,6 +18,36 @@
     cursor: pointer;
     color: #2ECDCD;
     border: 1px solid white;
+}
+
+.button-next-person {
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+.button-info {
+    border: 1px #41D9CA;
+    background-color: #8FD9D1;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 49px;
+    height: 49px;
+}
+
+.button-info-text {
+    font-size: 25px;
+    line-height: 0;
+    color: #41D9CA;
+}
+
+.buttons-group-profile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 0;
+    margin-top: 42px;
 }
 
 .button-profile {
@@ -24,30 +63,6 @@
     border: 1px solid white;
 }
 
-.button-next-person {
-    border: none;
-    cursor: pointer;
-    background: transparent;
-}
-
-.buttons-group-person {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 30px;
-    padding-right: 20px;
-    margin-top: 42px;
-}
-
-.buttons-group-profile {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 42px;
-}
-
 .profile-title {
     line-height: 23.87px;
     font-size: 27px;
@@ -57,3 +72,21 @@
     width: 40%;
     margin: 0 auto;
 }
+
+
+/* input[type="text"] {
+    border: 1px solid #EDEDED;
+}
+
+input[type="text"]:focus {
+    border: 1px solid #EDEDED;
+    outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+*:focus {
+    outline: none;
+} */

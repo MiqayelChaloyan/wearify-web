@@ -1,9 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
-import formInitialValues from '../../components/form/formInitialValues'
 
 const initialDataSlice = createSlice({
   name: 'initialData',
-  initialState: { formInitialValues },
+  initialState: null,
   reducers: {
     addData: (state, action) => {
       return { ...state, ...action.payload };

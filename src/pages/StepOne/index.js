@@ -22,11 +22,11 @@ const StepOne = (props) => {
     };
 
     return (
-        <div className='container'>
+        <div className='container-step-one'>
             <p className='step-text'>Find the size that best fits you,based on similar body frames:</p>
             <div>
                 <p className='title-row'> Height </p>
-                <div className='height-row'>
+                <div className='row'>
                     <div className='input-box'>
                         <InputField
                             name={feet.name}
@@ -46,21 +46,21 @@ const StepOne = (props) => {
                     }
                     <ToggleSwitch
                         name={isCentimeter.name}
-                        leftLabel="cm"
-                        rightLabel="in"
+                        leftLabel='cm'
+                        rightLabel='in'
                         onChange={handleToggle}
                     />
                 </div>
             </div>
             <div>
                 <p className='title-row'> Weight </p>
-                <div className='weight-row'>
+                <div className='row'>
                     <div className='input-box'>
                         <InputField
                             name={weight.name}
                             className='form-input-weight'
                         />
-                        <span className='unit'>{isKilogramBool ? 'ibs' : 'kg'}</span>
+                        <span className='unit'>{isKilogramBool ? 'kg' : 'ibs'}</span>
                     </div>
                     <ToggleSwitch
                         name={isKilogram.name}

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 
 import Navigation from './navigaton';
 
@@ -15,7 +15,7 @@ const App = () => {
     setId(id)
   }
 
-  const handleClose = () => setOpen(false);
+  const handleClose = useCallback(() => setOpen(false), []);
 
   return (
     <ThemeProvider>

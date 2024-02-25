@@ -46,13 +46,13 @@ const SliderRange = ({ name }) => {
                 onChange={handleSliderChange}
             />
             <div className='lines'>
-                <div className='line'></div>
-                <div className='line'></div>
-                <div className='line'></div>
-                <div className='line'></div>
-                <div className='line'></div>
-                <div className='line'></div>
-                <div className='line'></div>
+                <div className='line-range'></div>
+                <div className='line-range'></div>
+                <div className='line-range'></div>
+                <div className='line-range'></div>
+                <div className='line-range'></div>
+                <div className='line-range'></div>
+                <div className='line-range'></div>
             </div>
             <div className='size'>
                 <p className='size-text'>Tighter</p>
