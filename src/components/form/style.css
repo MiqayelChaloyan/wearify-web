@@ -6,8 +6,18 @@
   padding-right: 45px;
 }
 
-.step {
+.active-step {
   color: white;
+  font-size: 22.78px;
+  font-weight: 500;
+  line-height: 27.18px;
+}
+
+.privacy {
+  color: #9B9CA7;
+  text-decoration: solid underline;
+  -webkit-text-underline-position: under;
+  text-underline-position: under;
   font-size: 22.78px;
   font-weight: 500;
 }
@@ -19,6 +29,7 @@
   background-color: #ffffff;
   margin: 0 auto;
   border-radius: 40px;
+  margin-bottom: 40px
 }
 
 .progressbar div {
@@ -29,13 +40,30 @@
   border-radius: 40px;
 }
 
-.buttons-group {
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 33.41px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.line {
+  background-color: #2ECDCD;
+  width: 351px;
+  height: 3.45px;
+  margin: 0 auto;
+  opacity: 0.2;
+}
+
+.buttons {
   margin-top: 1rem;
   display: flex;
   gap: 1.5rem;
   justify-content: center;
   position: fixed;
-  bottom: 25px;
+  bottom: 50px;
   right: 0;
   left: 0;
 }
@@ -62,39 +90,49 @@
   color: white
 }
 
-.privacy {
-  color: #9B9CA7;
-  text-decoration: underline;
-  font-size: 22.78px;
-  font-weight: 500;
-}
-
-input[type="text"] {
-  border: 1px solid #EDEDED;
-}
-
-input[type="text"]:focus {
-  border: 1px solid #EDEDED;
-  outline: none;
-}
-
-input[type=number]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-
-*:focus {
-  outline: none;
-}
-
-
 @media screen and (max-device-width: 1200px) {}
 
 @media screen and (max-width: 991px) {}
 
 @media screen and (max-width: 767px) {
-    .container {
-        width: 380px;
-        margin: 0 auto;
-        padding: 10px;
-    }
+  .container {
+    width: 380px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  /* PROGRESS BAR */
+  .progressbar {
+    width: 300px;
+    height: 2px;
+  }
+
+  .active-step {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .privacy {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .title {
+    font-size: 25px;
+  }
+
+  .buttons {
+    bottom: 25px;
+  }
+
+  .line {
+    width: 270px;
+    height: 2px;
+  }
+
+  .button-next, .button-back {
+    height: 60px;
+  }
 }

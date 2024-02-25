@@ -1,8 +1,10 @@
+import React from 'react';
+
 import useTheme from '../../hooks/useTheme';
-import { Button } from '../../ui/button';
+
 import './style.css';
 
-export const Modal = ({ open, handleClose, children, currentStepIndex }) => {
+export const Modal = React.memo(({ open, handleClose, children, currentStepIndex }) => {
     const { theme } = useTheme();
 
     return (
@@ -11,7 +13,12 @@ export const Modal = ({ open, handleClose, children, currentStepIndex }) => {
                 <div className="modal-content">
                     {currentStepIndex !== 0 && currentStepIndex < 2 &&
                         <div className="modal-header">
-                            <Button onClick={handleClose} text='✖' style={{ border: 'none', background: 'none', cursor: 'pointer', color: 'white' }} fontSize='20px' />
+                            <button
+                                onClick={handleClose}
+                                className='modal-button'
+                            >
+                                ✖
+                            </button>
                         </div>
                     }
                     {children}
@@ -19,4 +26,4 @@ export const Modal = ({ open, handleClose, children, currentStepIndex }) => {
             </div>
         </div>
     )
-};
+});

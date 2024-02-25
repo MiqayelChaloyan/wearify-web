@@ -1,10 +1,10 @@
-.image {
+.clothes {
     margin: 0 auto;
-    width: 49%;
+    width: 50%;
 }
 
 .bottom-sheet {
-    background-color: #e3e0e099;
+    background-color: #E3E3E3;
     height: 356px;
     position: fixed;
     margin: auto;
@@ -38,14 +38,16 @@
 
 .recommendation {
     line-height: 23.87px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     color: #0C0D34;
     text-align: left;
 }
 
-.text {
-    width: 220px;
+.contain {
+    width: 169.09px;
+    height: 146.38px;
+    margin: 0;
 }
 
 .sheet-row-2 {
@@ -59,12 +61,21 @@
 
 @media screen and (max-width: 991px) {}
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 412px) {
     .bottom-sheet {
-        width: 410px;
+        width: 100%;
     }
 
     .text {
         width: 194px;
     }
+
+    .clothes {
+        margin: 0 auto;
+        width: 65%;
+    }
+    
+    .bottom-sheet {
+        height: 348px;
+    }    
 }

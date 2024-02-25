@@ -1,13 +1,17 @@
 import { useState } from 'react';
+import { useField } from 'formik';
 
 import './style.css';
 
-const SliderRange = ({ range, onChange }) => {
+const SliderRange = ({ name }) => {
     const [sliderValue, setSliderValue] = useState(50);
+    const [, , helpers] = useField(name);
 
     const handleSliderChange = (event) => {
         setSliderValue(parseInt(event.target.value, 10));
-        return onChange(getTightnessLevel());
+
+        const value = getTightnessLevel();
+        return helpers.setValue(value);
     };
 
     const getTightnessLevel = () => {
@@ -32,7 +36,7 @@ const SliderRange = ({ range, onChange }) => {
         <div className='range'>
             <span className='value top'>{getTightnessLevel()}</span>
             <input
-                id={range}
+                id={name}
                 className='slider-range'
                 type='range'
                 min='0'
@@ -42,13 +46,13 @@ const SliderRange = ({ range, onChange }) => {
                 onChange={handleSliderChange}
             />
             <div className='lines'>
-                <div className='line'></div>
-                <div className='line'></div>
-                <div className='line'></div>
-                <div className='line'></div>
-                <div className='line'></div>
-                <div className='line'></div>
-                <div className='line'></div>
+                <div className='line-range'></div>
+                <div className='line-range'></div>
+                <div className='line-range'></div>
+                <div className='line-range'></div>
+                <div className='line-range'></div>
+                <div className='line-range'></div>
+                <div className='line-range'></div>
             </div>
             <div className='size'>
                 <p className='size-text'>Tighter</p>

@@ -1,0 +1,95 @@
+.container-step-one {
+    width: 385px;
+    margin: 0 auto;
+}
+
+.step-text {
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 23.87px;
+    text-align: center;
+    width: 366px;
+    margin: 14px auto;
+}
+
+.title-row {
+    line-height: 23.87px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100px;
+}
+
+.input-box {
+    position: relative;
+}
+
+.form-input-height {
+    width: 118px;
+    height: 76px;
+    border-radius: 60px;
+    background-color: #414260;
+    border: 1px solid #EDEDED;
+    font-size: 24px;
+    letter-spacing: 1.5px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.unit {
+    position: absolute;
+    display: block;
+    right: 16px;
+    top: 30px;
+    z-index: 9;
+    font-size: 20px;
+    color: white;
+    border-width: 500;
+}
+
+.form-input-weight {
+    width: 247px;
+    height: 76px;
+    border-radius: 60px;
+    background-color: #414260;
+    border: 1px solid #EDEDED;
+    font-size: 24px;
+    letter-spacing: 1.5px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+@media screen and (max-width: 412px) {
+    .container-step-one {
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    .form-input-height {
+        width: 86px;
+        height: 60px;
+        font-size: 22px;
+        letter-spacing: 0.5px;
+    }
+
+    .form-input-weight {
+        width: 200px;
+        height: 60px;
+        font-size: 22px;
+        letter-spacing: 0.5px;
+    }
+
+    .unit {
+        top: 20px;
+    }
+}

@@ -1,26 +1,30 @@
-import { useState } from "react";
-import { useDebounce } from "use-debounce";
+import { at } from 'lodash';
+import { useField } from 'formik';
+import './style.css';
 
-export const Input = ({ name, onChange, value: inputValue, className, type, errors }) => {
-    const [text, setText] = useState(inputValue || '');
-    const [value] = useDebounce(text, 100);
+const InputField = (props) => {
+    const { errorText, ...rest } = props;
+    const [field, meta] = useField(props);
 
-    const handleChange = (e) => {
-        setText(e.target.value);
-        onChange(e);
+    function _renderHelperText() {
+        const [touched, error] = at(meta, 'touched', 'error');
+        if (touched && error) {
+            return error;
+        }
     };
 
     return (
-        <div>
-            <input
-                name={name}
-                id={name}
-                type={type}
-                value={value}
-                onChange={handleChange}
-                className={className}
-            />
-            {/* <span className='error'>{errors && errors.message}</span> */}
+        <div className='form-input'>
+            <input type="text" {...field} {...rest} />
+            {meta.touched && meta.error &&
+                <span
+                    className='error-field'
+                >
+                    {_renderHelperText()}
+                </span>
+            }
         </div>
     );
 };
+
+export default InputField;

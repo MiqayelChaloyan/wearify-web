@@ -1,3 +1,5 @@
+import './style.css';
+
 const cleanPercentage = (percentage) => {
     const isNegativeOrNaN = !Number.isFinite(+percentage) || percentage < 0;
     const isTooHigh = percentage > 100;
@@ -19,6 +21,7 @@ const Circle = ({ colour, percentage, fill }) => {
             strokeDasharray={circ}
             strokeDashoffset={percentage ? strokePct : 0}
             strokeLinecap="round"
+            className="circle"
         ></circle>
     );
 };

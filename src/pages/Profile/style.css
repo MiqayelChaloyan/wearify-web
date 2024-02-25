@@ -12,35 +12,35 @@
 .height-person {
     width: 103.93px;
     background-color: #2ECDCD;
-    height: 41.72px;
+    height: 56px;
     border-radius: 6.44px;
 }
 
 .weight-person {
     width: 103.93px;
     background-color: #2ECDCD;
-    height: 41.72px;
+    height: 56px;
     border-radius: 6.44px;
 }
 
 .age-person {
     width: 103.93px;
     background-color: #2ECDCD;
-    height: 41.72px;
+    height: 56px;
     border-radius: 6.44px;
 }
 
 .feet-person {
     width: 103.93px;
     background-color: #2ECDCD;
-    height: 41.72px;
+    height: 56px;
     border-radius: 6.44px;
 }
 
 .gender-person {
     width: 103.93px;
     background-color: #858699;
-    height: 41.72px;
+    height: 56px;
     border-radius: 6.44px;
     border: 1px solid white
 }
@@ -70,6 +70,12 @@
 .camera-button {
     position: absolute;
     bottom: 40px;
+    left: 40px;
+}
+
+.edit-button {
+    position: absolute;
+    bottom: 174px;
     left: 40px;
 }
 
@@ -124,9 +130,57 @@
 }
 
 .person-size-text {
-    color: white;
+    color: #F5F5F5;
     font-size: 18.48px;
-    line-height: 5px;
+    line-height: 16px;
     font-weight: 700;
     text-align: center;
+}
+
+.edit-button-text {
+    color: #F5F5F5;
+    font-size: 18.48px;
+    line-height: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 412px) {
+    .right {
+        height: 100%;
+    }
+
+    .sizes {
+        margin-top: 10px;
+    }
+
+    .weight-person, .height-person, .age-person, .gender-person, .feet-person {
+        width: 90px;
+        height: 40px;
+        border-radius: 6.44px;
+    }
+
+    .person-size-text {
+        font-size: 11px;
+        line-height: 9px;
+        font-weight: 500;
+        padding: 5px;
+    }
+
+    .title-sizes {
+        font-size: 18px;
+    }
+
+    .average {
+        height: 100%;
+        width: 100%;
+    }
+
+    .profile-title {
+        line-height: 0;
+        font-size: 20px;
+        width: 50%;
+        margin: 0 auto;
+    }
 }

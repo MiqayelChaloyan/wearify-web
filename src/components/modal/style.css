@@ -9,6 +9,15 @@
     top: 90px;
 }
 
+.modal-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
 .modal-content {
     display: grid;
 }
@@ -17,6 +26,7 @@
     border-bottom-color: #eeeeee;
     margin-left: auto;
     margin-right: 37px;
+    height: 30px;
 }
 
 @media screen and (max-device-width: 1200px) {}
@@ -26,5 +36,16 @@
 @media screen and (max-width: 767px) {
     .modal {
         width: 410px;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .modal {
+        width: 95%;
+        height: 660px;
+    }
+
+    .modal-button {
+        margin-top: 20px;
     }
 }

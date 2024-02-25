@@ -2,15 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialDataSlice = createSlice({
   name: 'initialData',
-  initialState: {
-    feet: '',
-    inches: '',
-    weight: '',
-    selectedHeight: 'cm',
-    selectedWeight: 'kg',
-    age: '',
-    range: '',
-  },
+  initialState: null,
   reducers: {
     addData: (state, action) => {
       return { ...state, ...action.payload };

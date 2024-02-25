@@ -1,0 +1,63 @@
+.container-scann {
+    width: 318.65px;
+    margin: 40px auto;
+}
+
+.title-scanning {
+    color: #0C0D34;
+    font-size: 33.28px;
+    line-height: 39.71px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.text-intro {
+    color: #0C0D34;
+    font-size: 14.92px;
+    line-height: 17.81px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.QR-img-style {
+    width: 217.78px;
+    height: 217.78px;
+}
+
+.image-qr-row {
+    display: flex;
+    justify-content: center;
+}
+
+.step {
+    color: #0C0D34;
+    font-size: 21.19px;
+    line-height: 32.52px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.line-scann {
+    width: 320px;
+    height: 3.45px;
+    background-color: #0C0D34;
+    opacity: 0.1;
+    margin: 30px auto;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 412px) {
+    .QR-img-style {
+        width: 170px;
+        height: 170px;
+    }
+
+    .title-scanning {
+        font-size: 27px;
+    }
+
+    .step {
+        font-size: 19px;
+        line-height: 30px;
+    }
+}

@@ -1,10 +1,10 @@
-import { useEffect } from "react";
-
-import { useMultistepForm } from "../hooks/useMultistepForm";
+import React, { useEffect } from "react";
 
 import { useSelector } from "react-redux";
 
-import RegistracionForm from "../components/form";
+import { useMultistepForm } from "../hooks/useMultistepForm";
+
+import SteppedModal from "../components/form";
 import { Modal } from "../components/modal"
 import PersonNavigate from "../components/person";
 
@@ -16,7 +16,7 @@ const Navigation = ({ open, handleClose }) => {
     const { currentStepIndex, step, back, next } =
         useMultistepForm([
             <Splash />,
-            <RegistracionForm />,
+            <SteppedModal />,
             <PersonNavigate/>
         ]);
 
@@ -50,4 +50,4 @@ const Navigation = ({ open, handleClose }) => {
     )
 };
 
-export default Navigation;
+export default React.memo(Navigation);
