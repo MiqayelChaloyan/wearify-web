@@ -74,7 +74,7 @@ input:checked+.slider:before {
 
 
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 767px) {
     .toggle-switch {
         padding: 0;
     }

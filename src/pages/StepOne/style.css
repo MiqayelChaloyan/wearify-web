@@ -30,9 +30,15 @@
 
 .input-box {
     position: relative;
+    width: 30%;
 }
 
-.form-input-height {
+.input-box-weight {
+    position: relative;
+    width: 248px;
+}
+
+.form-input-height-style {
     width: 118px;
     height: 76px;
     border-radius: 60px;
@@ -45,18 +51,7 @@
     text-align: center;
 }
 
-.unit {
-    position: absolute;
-    display: block;
-    right: 16px;
-    top: 30px;
-    z-index: 9;
-    font-size: 20px;
-    color: white;
-    border-width: 500;
-}
-
-.form-input-weight {
+.form-input-weight-style {
     width: 247px;
     height: 76px;
     border-radius: 60px;
@@ -69,27 +64,23 @@
     text-align: center;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 767px) {
     .container-step-one {
         width: 350px;
         margin: 0 auto;
     }
 
-    .form-input-height {
+    .form-input-height-style {
         width: 86px;
         height: 60px;
         font-size: 22px;
         letter-spacing: 0.5px;
     }
 
-    .form-input-weight {
+    .form-input-weight-style {
         width: 200px;
         height: 60px;
         font-size: 22px;
         letter-spacing: 0.5px;
-    }
-
-    .unit {
-        top: 20px;
     }
 }

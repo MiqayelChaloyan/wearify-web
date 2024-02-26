@@ -3,28 +3,16 @@ export default {
     formField: {
         feet: {
             name: 'feet',
-            requiredErrorMsg: 'Feet is required'
+            requiredErrorMsg: 'Please enter your height (between 90 and 230 cm).',
+            typeError: 'Must be number',
         },
         inches: {
             name: 'inches',
-            requiredErrorMsg: 'Inches is required'
+            requiredErrorMsg: 'Please enter your height (between 3 ft 0 in and 7 ft 6 in).',
+            typeError: 'Must be number',
         },
-        // weight: {
-        //     name: 'weight',
-        //     requiredErrorMsg: 'Weight is required'
-        // },
         isCentimeter: {
             name: 'isCentimeter',
         },
-        // isKilogram: {
-        //     name: 'isKilogram',
-        // },
-        // age: {
-        //     name: 'age',
-        //     requiredErrorMsg: 'Age is required'
-        // },
-        // range: {
-        //     name: 'range',
-        // },
     }
 };

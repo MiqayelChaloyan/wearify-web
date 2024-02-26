@@ -100,9 +100,6 @@
     margin: 0 auto;
     padding: 10px;
   }
-}
-
-@media screen and (max-width: 412px) {
   /* PROGRESS BAR */
   .progressbar {
     width: 300px;

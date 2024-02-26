@@ -41,6 +41,7 @@ const Edit = () => {
         setData(prev => {
             return { ...prev, ...values }
         });
+        console.log(values);
         dispatch(addData({ ...values }))
     };
 
@@ -63,19 +64,19 @@ const Edit = () => {
                                 <div className='row-1'>
                                     <div className='input-box'>
                                         <InputField
+                                            unit='cm'
                                             name={formField.feet.name}
                                             className='form-input-height'
                                         />
-                                        <span className='unit'>ft</span>
                                     </div>
                                     {
-                                        !isCentimeter &&
+                                        !isCentimeterBool &&
                                         <div className='input-box-edit'>
                                             <InputField
+                                                unit='in'
                                                 name={formField.inches.name}
                                                 className='form-input-height'
                                             />
-                                            <span className='unit'>in</span>
                                         </div>
                                     }
                                 </div>

@@ -94,18 +94,7 @@
 
 @media screen and (max-width: 991px) {}
 
-/* @media screen and (max-width: 767px) {
-    .slider-range {
-        width: 340px;
-        height: 4px;
-    }
-
-    .value:after {
-        margin-bottom: -10px;
-    }
-} */
-
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 767px) {
     .slider-range {
         width: 320px;
         height: 4px;

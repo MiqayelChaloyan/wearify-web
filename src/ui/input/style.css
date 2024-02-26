@@ -1,15 +1,33 @@
-.form-input {
+.form-group{
     display: grid;
     place-items: center;
     gap: 5px;
+    position: relative;
 }
 
 .error-field {
+    display: block;
     color: #D96A6A;
-    font-size: 14px;
+    font-size: 11px;
 }
 
-@media screen and (max-width: 412px) {
+.input-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.unit {
+    position: absolute;
+    display: block;
+    right: 10px;
+    top: 26px;
+    z-index: 9;
+    font-size: 20px;
+    color: white;
+    border-width: 500;
+}
+
+@media screen and (max-width: 767px) {
     .error-field {
         font-size: 12px;
     }
