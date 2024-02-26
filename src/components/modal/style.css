@@ -35,13 +35,7 @@
 
 @media screen and (max-width: 767px) {
     .modal {
-        width: 410px;
-    }
-}
-
-@media screen and (max-width: 412px) {
-    .modal {
-        width: 95%;
+        width: 393px;
         height: 660px;
     }
 

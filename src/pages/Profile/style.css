@@ -146,7 +146,7 @@
 }
 
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 767px) {
     .right {
         height: 100%;
     }

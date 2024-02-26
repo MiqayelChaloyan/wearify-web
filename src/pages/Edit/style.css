@@ -85,9 +85,10 @@
 .input-box-edit {
     margin-left: 10px;
     position: relative;
+    width: 30%;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 767px) {
 
     .button-edit {
         width: 160px;

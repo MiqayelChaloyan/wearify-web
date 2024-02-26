@@ -72,21 +72,3 @@
     width: 40%;
     margin: 0 auto;
 }
-
-
-/* input[type="text"] {
-    border: 1px solid #EDEDED;
-}
-
-input[type="text"]:focus {
-    border: 1px solid #EDEDED;
-    outline: none;
-}
-
-input[type=number]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-}
-
-*:focus {
-    outline: none;
-} */

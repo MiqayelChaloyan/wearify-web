@@ -31,19 +31,19 @@ const StepOne = (props) => {
                 <div className='row'>
                     <div className='input-box'>
                         <InputField
+                            unit='cm'
                             name={feet.name}
-                            className='form-input-height'
+                            className='form-input-height-style'
                         />
-                        <span className='unit'>ft</span>
                     </div>
                     {
                         !isCentimeterBool &&
                         <div className='input-box'>
                             <InputField
+                                unit='in'
                                 name={inches.name}
-                                className='form-input-height'
+                                className='form-input-height-style'
                             />
-                            <span className='unit'>in</span>
                         </div>
                     }
                     <ToggleSwitch
@@ -57,12 +57,12 @@ const StepOne = (props) => {
             <div>
                 <p className='title-row'> Weight </p>
                 <div className='row'>
-                    <div className='input-box'>
+                    <div className='input-box-weight'>
                         <InputField
+                            unit={isKilogramBool ? 'kg' : 'ibs'}
                             name={weight.name}
-                            className='form-input-weight'
+                            className='form-input-weight-style'
                         />
-                        <span className='unit'>{isKilogramBool ? 'kg' : 'ibs'}</span>
                     </div>
                     <ToggleSwitch
                         name={isKilogram.name}

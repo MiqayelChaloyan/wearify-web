@@ -3,7 +3,7 @@ import { useField } from 'formik';
 import './style.css';
 
 const InputField = (props) => {
-    const { errorText, ...rest } = props;
+    const { errorText, unit, ...rest } = props;
     const [field, meta] = useField(props);
 
     function _renderHelperText() {
@@ -14,8 +14,11 @@ const InputField = (props) => {
     };
 
     return (
-        <div className='form-input'>
-            <input type="text" {...field} {...rest} />
+        <div className='form-group'>
+            <div className='input-wrapper'>
+                <input type="text" {...field} {...rest} />
+                <span className='unit'>{unit}</span>
+            </div>
             {meta.touched && meta.error &&
                 <span
                     className='error-field'

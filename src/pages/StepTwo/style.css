@@ -1,5 +1,5 @@
 .container-step-two {
-    width: 385px;
+    width: 100%;
     margin: 50px auto;
 }
 
@@ -34,7 +34,7 @@
     margin: 0 auto;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 767px) {
     .input-style-age {
         width: 256px;
         height: 60px;
