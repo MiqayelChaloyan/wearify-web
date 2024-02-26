@@ -183,4 +183,12 @@
         width: 50%;
         margin: 0 auto;
     }
+
+    .right {
+        width: 130px;
+    }
+
+    .profile-title {
+       width: 49%;
+    }
 }

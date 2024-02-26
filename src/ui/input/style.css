@@ -31,4 +31,8 @@
     .error-field {
         font-size: 12px;
     }
+
+    .unit {
+        top: 20px;
+    }
 }

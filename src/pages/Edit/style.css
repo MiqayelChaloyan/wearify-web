@@ -90,6 +90,12 @@
 
 @media screen and (max-width: 767px) {
 
+    .input-box-edit {
+        margin-left: 0;
+        position: relative;
+        width: 30%;
+    }
+
     .button-edit {
         width: 160px;
         height: 60px;
@@ -112,10 +118,15 @@
     }
 
     .form-input-height {
-        width: 86px;
+        width: 60px;
         height: 60px;
         font-size: 22px;
         letter-spacing: 0.5px;
+        padding-right: 42px;
+    }
+
+    .right {
+        width: 130px;
     }
     
 }

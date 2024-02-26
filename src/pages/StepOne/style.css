@@ -39,7 +39,7 @@
 }
 
 .form-input-height-style {
-    width: 118px;
+    width: 80px;
     height: 76px;
     border-radius: 60px;
     background-color: #414260;
@@ -48,11 +48,12 @@
     letter-spacing: 1.5px;
     line-height: 24px;
     color: #FFFFFF;
-    text-align: center;
+    text-align: right;
+    padding-right: 43px;
 }
 
 .form-input-weight-style {
-    width: 247px;
+    width: 218px;
     height: 76px;
     border-radius: 60px;
     background-color: #414260;
@@ -62,6 +63,7 @@
     line-height: 24px;
     color: #FFFFFF;
     text-align: center;
+    padding-right: 39px;
 }
 
 @media screen and (max-width: 767px) {
@@ -71,14 +73,15 @@
     }
 
     .form-input-height-style {
-        width: 86px;
+        width: 60px;
         height: 60px;
         font-size: 22px;
         letter-spacing: 0.5px;
+        padding-right: 42px;
     }
 
     .form-input-weight-style {
-        width: 200px;
+        width: 181px;
         height: 60px;
         font-size: 22px;
         letter-spacing: 0.5px;
