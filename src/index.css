@@ -34,11 +34,17 @@ input:-webkit-autofill:focus {
   transition: background-color 0s 600000s, color 0s 600000s !important;
 }
 
+
+button {
+  outline: none;
+}
+
 button:active {
   outline: none;
-  border: none;
+  cursor: none;
 }
 
 button:focus {
   outline: 0;
+  cursor: pointer;
 }
