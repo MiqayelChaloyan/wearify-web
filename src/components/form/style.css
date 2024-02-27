@@ -130,6 +130,7 @@
   }
 
   .button-next, .button-back {
+    cursor: none;
     height: 60px;
   }
 }

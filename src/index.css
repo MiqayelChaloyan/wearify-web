@@ -41,10 +41,8 @@ button {
 
 button:active {
   outline: none;
-  cursor: none;
 }
 
 button:focus {
   outline: 0;
-  cursor: pointer;
 }
